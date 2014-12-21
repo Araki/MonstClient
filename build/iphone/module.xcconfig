@@ -1,0 +1,7 @@
+// this is a generated file - DO NOT EDIT
+
+COM_JOSEANDRO_UNIQUEIDS_OTHER_LDFLAGS=$(inherited) -framework UIKit
+COM_ONECOWSTANDING_FLURRY_OTHER_LDFLAGS=$(inherited) -framework Security
+NET_NEND_OTHER_LDFLAGS=$(inherited) -framework Security -weak_framework AdSupport
+TI_ADMOB_OTHER_LDFLAGS=$(inherited) -framework AdSupport -framework AudioToolbox -framework AVFoundation -framework CoreGraphics -framework CoreTelephony -framework MessageUI -framework StoreKit -framework SystemConfiguration
+OTHER_LDFLAGS=$(inherited) $(COM_JOSEANDRO_UNIQUEIDS_OTHER_LDFLAGS) $(COM_ONECOWSTANDING_FLURRY_OTHER_LDFLAGS) $(NET_NEND_OTHER_LDFLAGS) $(TI_ADMOB_OTHER_LDFLAGS) 
