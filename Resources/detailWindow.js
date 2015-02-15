@@ -1,91 +1,68 @@
 
-function detailWindow() {
+function detailWindow( data ) {
 
 	var self = Titanium.UI.createWindow({
-		barColor:'#1CADC3',
-		titleControl: Ti.UI.createLabel({
-	        text: 'マルチ掲示板',
-	        color: 'white'
+		statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+		barImage: 'images/header.png',
+		titleControl: Ti.UI.createImageView({
+	    	image: 'images/detail_title_label.png',
+	    	height: 24,
+	    	width: 88
 	    })
 	});
 	self.hideTabBar();
 	
-	var webView = Ti.UI.createWebView({
-		url: '/detail.html'
+	var backbutton = Titanium.UI.createButton({
+	    backgroundImage:'images/back_btn.png',
+	    //backgroundColor: 'black',
+	    width: 50.3,//68,
+	    height: 32//38
+	});
+	self.leftNavButton = backbutton;
+	
+	backbutton.addEventListener('click', function(){
+	  	self.close();
 	});
 	
-	webView.addEventListener('load', function() {
-		webView.evalJS('setText("HOGEHOGE")');
+	webView = Ti.UI.createWebView({
+		url: '/detail.html',
+		backgroundColor: 'black'
 	});
 	
-	var launchMulti = function(e) {
-	    var launchWin = Ti.UI.createWindow({
-	        title:"",
-	        backgroundColor:'white'
-	      });
-	    var launchWebView = Ti.UI.createWebView({
-	    	url:'http://static.monster-strike.com/line/?pass_code=OTI2MTIxMTk4'
-	    });
-	    launchWin.add(launchWebView);
-	    tabGroup.activeTab.open(launchWin);
-	    
+	//webviewに変数を渡す
+	var getContents = function(e){
+		var code = "getContents(name = '" + data.name + "', desc = '" + data.desc + "', image = '" + data.image + "')";
+		webView.evalJS( code );
 	};
+	Ti.App.addEventListener('webviewload', getContents);
 	
+	//マルチ起動ボタンが押されたときの挙動
+	var launchMulti = function(e) {
+		recruitID = data.id;
+		luck_restriction = data.luck_restriction;
+		//alert(data.luck_restriction);
+		var send_data = {
+			id: recruitID
+		};
+	
+		url = Ti.App.domain + "increment_access.json";
+		sendData( url, send_data, function( get_data ){
+			if (get_data.success){
+			}else{
+			}
+		});
+		Ti.Platform.openURL(data.url);
+	};
 	Ti.App.addEventListener('app:fromWebView', launchMulti);
 	
+	//前画面に戻る際に割り当てたイベントリスナーを削除
 	self.addEventListener('close', function(){
 		Ti.App.removeEventListener('app:fromWebView', launchMulti);
+		Ti.App.removeEventListener('webviewload', getContents);
 	});
 	
 	self.add(webView);
 	return self;
-
 }
 
-module.exports = detailWindow;
-
-/*
-function detailWindow() {
-
-	var self = Titanium.UI.createWindow({
-		barColor:'#1CADC3',
-		titleControl: Ti.UI.createLabel({
-	        text: 'マルチ掲示板',
-	        color: 'white'
-	    })
-	});
-	self.hideTabBar();
-	
-	var view = Titanium.UI.createView({});
-	scrollView.add(view);
-	
-	var label1 =  Titanium.UI.createLabel({
-		text: '####################',
-		top: 20
-	});
-	view.add(label1);
-	
-	var label2 =  Titanium.UI.createLabel({
-		text: '####################',
-		top: 50
-	});
-	view.add(label2);
-	
-	setTimeout(showBanner, 1000);
-	
-	function showBanner(){
-		var adview = nend.createView({
-	        spotId: '277713',
-	        apiKey: '1d45d61fc2d6a620799606b4ae7cfd03ebff9e91',
-	        top: 50
-	    });
-	    view.add(adview);
-	    
-	    label2.top = 310;
-	}
-	
-	return self;
-
-}
-*/
 module.exports = detailWindow;

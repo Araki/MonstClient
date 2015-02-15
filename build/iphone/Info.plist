@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
+	<string>ja_JP</string>
 	<key>CFBundleDisplayName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>マルチ掲示板</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
@@ -14,10 +14,11 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>jp.shiftage.monsto</string>
+			<string>jp.shiftage.talkroom</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>monsto</string>
+				<string>talkroom</string>
+				<string>fb349815825157641</string>
 			</array>
 		</dict>
 	</array>
@@ -32,9 +33,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.0.2</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIRequiresPersistentWiFi</key>
@@ -45,7 +46,7 @@
 	<false/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleDefault</string>
-	<key>UISupportedInterfaceOrientations~iphone</key>
+	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
@@ -59,29 +60,19 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>appicon.png</string>
+		<string>appicon@2x.png</string>
+		<string>appicon-76.png</string>
+		<string>appicon-76@2x.png</string>
+		<string>appicon-72.png</string>
+		<string>appicon-72@2x.png</string>
+		<string>appicon-60@2x.png</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~iphone</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>UILaunchImages</key>
 	<array>
-		<dict>
-			<key>UILaunchImageName</key>
-			<string>Default-Portrait-736h</string>
-			<key>UILaunchImageOrientation</key>
-			<string>Portrait</string>
-			<key>UILaunchImageSize</key>
-			<string>{414, 736}</string>
-			<key>UILaunchImageMinimumOSVersion</key>
-			<string>8.0</string>
-		</dict>
-		<dict>
-			<key>UILaunchImageName</key>
-			<string>Default-Landscape-736h</string>
-			<key>UILaunchImageOrientation</key>
-			<string>Landscape</string>
-			<key>UILaunchImageSize</key>
-			<string>{414, 736}</string>
-			<key>UILaunchImageMinimumOSVersion</key>
-			<string>8.0</string>
-		</dict>
 		<dict>
 			<key>UILaunchImageName</key>
 			<string>Default-667h</string>
@@ -112,33 +103,6 @@
 			<key>UILaunchImageMinimumOSVersion</key>
 			<string>7.0</string>
 		</dict>
-	</array>
-	<key>UILaunchImages~ipad</key>
-	<array>
-		<dict>
-			<key>UILaunchImageName</key>
-			<string>Default-Portrait</string>
-			<key>UILaunchImageOrientation</key>
-			<string>Portrait</string>
-			<key>UILaunchImageSize</key>
-			<string>{768, 1024}</string>
-			<key>UILaunchImageMinimumOSVersion</key>
-			<string>7.0</string>
-		</dict>
-		<dict>
-			<key>UILaunchImageName</key>
-			<string>Default-Landscape</string>
-			<key>UILaunchImageOrientation</key>
-			<string>Landscape</string>
-			<key>UILaunchImageSize</key>
-			<string>{768, 1024}</string>
-			<key>UILaunchImageMinimumOSVersion</key>
-			<string>7.0</string>
-		</dict>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>/fonts/rounded-x-mplus-2p-regular.ttf</string>
 	</array>
 </dict>
 </plist>
