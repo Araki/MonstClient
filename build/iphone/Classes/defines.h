@@ -1,6 +1,6 @@
 // Warning: this is generated file. Do not modify!
 
-#define TI_VERSION 3.4.0
+#define TI_VERSION 3.5.1
 #define USE_TI_ANALYTICS
 #define USE_TI_API
 #define USE_TI_APIINFO
@@ -20,7 +20,7 @@
 #define USE_TI_PLATFORMDISPLAYCAPSPLATFORMWIDTH
 #define USE_TI_PLATFORMNAME
 #define USE_TI_PLATFORMOPENURL
-#define USE_TI_PLATFORMOSNAME
+#define USE_TI_PLATFORMUUID
 #define USE_TI_UI
 #define USE_TI_UI2DMATRIX
 #define USE_TI_UIACTIVITYINDICATOR

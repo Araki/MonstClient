@@ -193,7 +193,7 @@ function recruitWindow() {
 	var urlTextArea = Titanium.UI.createTextArea({
         value:"（例）\nモンストでマルチしない？\n「タスの巣窟（パワタスキング！）」\nhttp://static.monster-strike.com/line/?pass_code=XXXXXXXXXXXX\n↑このURLをタップすると、タップした人達同士で一緒にマルチプレイができるよ！",
         top:285,
-        height:200,
+        height:175,
         left: '5%',//30,
         right: '5%',//30,
         textAlign:'left',
@@ -245,26 +245,64 @@ function recruitWindow() {
   		}
 	});
 	
-	/*
+	
 	var tosCheckBox = createCheckBox();
-	tosCheckBox.top = 505;
+	tosCheckBox.top = 470;
 	tosCheckBox.left = 30;
 	tosCheckBox.height = 30;
 	tosCheckBox.width = 30;
+	tosCheckBox.on();
 	view.add(tosCheckBox);
 	
 	var tosDescLabel =  Titanium.UI.createLabel({
 		text: '利用規約に同意する',
-		top: 505,
+		top: 470,
 		height: 30,
 		left: 70,
 		right: 30,
 		verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
-		color: 'black',
+		color: 'blue',
 		font:{fontSize: 14 }
 	});
 	view.add(tosDescLabel);
-	*/
+	
+	tosDescLabel.addEventListener('click', function(){
+		var tosWindow = Titanium.UI.createWindow({
+			statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+			barImage: 'images/header.png',
+			titleControl: Ti.UI.createLabel({
+		    	text:'利用規約',
+		    	font:{fontWeight: 'bold', fontSize: 19 },
+		    	color: 'white',
+		    	height: 24,
+		    	width: 88
+		    })
+		});
+		tosWindow.hideTabBar();
+		
+		var tosBackButton = Titanium.UI.createButton({
+		    backgroundImage:'images/back_btn.png',
+		    //backgroundColor: 'black',
+		    width: 50.3,//68,
+		    height: 32//38
+		});
+		tosWindow.leftNavButton = tosBackButton;
+		
+		tosBackButton.addEventListener('click', function(){
+		  	tosWindow.close();
+		});
+		
+		webView = Ti.UI.createWebView({
+			url: '/tos.html',
+			backgroundColor: 'white'
+		});
+		tosWindow.add(webView);
+		
+		tabGroup.activeTab.open(tosWindow);
+		
+		
+	});
+	
 	var submitButton = Ti.UI.createImageView({//createButton({
 		//title: '投稿する',
 		//font:{fontSize: 22},
@@ -289,10 +327,9 @@ function recruitWindow() {
 		if(urlTextArea.value == null || urlTextArea.value == ""){
 			errorMessage = errorMessage + "マルチURLを入力してください\n";
 		}
-		/*if(tosCheckBox.value == false){
+		if(tosCheckBox.value == false){
 			errorMessage = errorMessage + "利用規約に同意されない場合は投稿できません\n";
 		}
-		*/
 		if(descTextArea.value.length > 50){
 			errorMessage = errorMessage + "募集内容を50文字以内にしてください\n";
 		}

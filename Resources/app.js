@@ -1,11 +1,16 @@
 Ti.App.domain = "https://monstbbs.herokuapp.com/";
 //Ti.App.domain = "http://localhost:3000/";
 
+Ti.API.info("######" + Ti.Platform.createUUID());
+
 var Admob = require('ti.admob');
 var nend = require('net.nend');
 var iOSUniqueID = require('com.joseandro.uniqueids');
-var Flurry = require('com.onecowstanding.flurry');
+//var securely = require('bencoding.securely');
+//var Flurry = require('com.onecowstanding.flurry');
+//var TiFlurry = require('ti.flurry');
 
+/*
 Flurry.appVersion = Ti.App.version;
 Flurry.debugLogEnabled = true;
 Flurry.eventLoggingEnabled = true;
@@ -27,7 +32,7 @@ switch(Ti.Platform.osname){
         break;
 }
 Flurry.logAllPageViews();
-
+*/
 //statusbarの色を指定
 //Titanium.UI.iPhone.setStatusBarStyle(Titanium.UI.iPhone.StatusBar.OPAQUE_BLACK);
 //Titanium.UI.iPhone.statusBarStyle = Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT;

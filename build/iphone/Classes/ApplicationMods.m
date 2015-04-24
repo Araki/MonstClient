@@ -17,20 +17,6 @@
 
 	
 		[modules addObject:[NSDictionary
-			dictionaryWithObjectsAndKeys:@"iosuniqueids",
-			@"name",
-			@"com.joseandro.uniqueids",
-			@"moduleid",
-			@"1.0",
-			@"version",
-			@"026cfeca-5a2f-4590-91f7-cc4063be352f",
-			@"guid",
-			@"",
-			@"licensekey",
-			nil
-		]];
-		
-		[modules addObject:[NSDictionary
 			dictionaryWithObjectsAndKeys:@"flurry",
 			@"name",
 			@"com.onecowstanding.flurry",
@@ -49,7 +35,7 @@
 			@"name",
 			@"net.nend",
 			@"moduleid",
-			@"1.2.0",
+			@"1.2.2",
 			@"version",
 			@"d564e1a6-ed2d-4dff-ae00-8fef8e1bef0f",
 			@"guid",
@@ -63,9 +49,37 @@
 			@"name",
 			@"ti.admob",
 			@"moduleid",
-			@"1.6.0",
+			@"1.9.0",
 			@"version",
 			@"0d005e93-9980-4739-9e41-fd1129c8ff32",
+			@"guid",
+			@"",
+			@"licensekey",
+			nil
+		]];
+		
+		[modules addObject:[NSDictionary
+			dictionaryWithObjectsAndKeys:@"securely",
+			@"name",
+			@"bencoding.securely",
+			@"moduleid",
+			@"1.53.B",
+			@"version",
+			@"36a465bb-c79d-4c6c-b90c-a5e14a7e817b",
+			@"guid",
+			@"",
+			@"licensekey",
+			nil
+		]];
+		
+		[modules addObject:[NSDictionary
+			dictionaryWithObjectsAndKeys:@"iosuniqueids",
+			@"name",
+			@"com.joseandro.uniqueids",
+			@"moduleid",
+			@"1.0",
+			@"version",
+			@"026cfeca-5a2f-4590-91f7-cc4063be352f",
 			@"guid",
 			@"",
 			@"licensekey",

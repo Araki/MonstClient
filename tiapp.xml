@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>jp.shiftage.monsto</id>
     <name>monsto</name>
-    <version>1.0.2</version>
+    <version>1.0.6</version>
     <publisher>araki-k</publisher>
     <url>http://</url>
     <description>undefined</description>
@@ -48,11 +48,12 @@
         <theme>default</theme>
     </mobileweb>
     <modules>
-        <module platform="iphone">com.joseandro.uniqueids</module>
         <module platform="iphone">com.onecowstanding.flurry</module>
         <module platform="android">com.onecowstanding.flurry</module>
-        <module platform="iphone">net.nend</module>
-        <module platform="iphone">ti.admob</module>
+        <module platform="iphone" version="1.2.2">net.nend</module>
+        <module platform="iphone" version="1.9.0">ti.admob</module>
+        <module platform="iphone">bencoding.securely</module>
+        <module platform="iphone" version="1.1">com.joseandro.uniqueids</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>
@@ -61,5 +62,5 @@
         <target device="iphone">true</target>
         <target device="mobileweb">false</target>
     </deployment-targets>
-    <sdk-version>3.4.0.v20140916181713</sdk-version>
+    <sdk-version>3.5.1.GA</sdk-version>
 </ti:app>
