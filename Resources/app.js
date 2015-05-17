@@ -49,7 +49,7 @@ var tabGroup;
 checkLogin();
 
 Ti.App.addEventListener('resume',function(){
-	if(recruitID != ""){
+	if(recruitID != "" || recruitID == "0"){
 		if(luck_restriction == 1 || luck_restriction == "t"){
 			//alert("recruitID: " + recruitID);
 			rID = recruitID;
@@ -77,6 +77,40 @@ Ti.App.addEventListener('resume',function(){
 			});
 			alertDialog.show();
 		}
+		
+		//レビュー誘導ポップアップ
+		//review==nullのときは、最初にアプリを立ち上げたとき
+		if(Ti.App.Properties.getString('review') == null){
+			recruitID = "";
+			//reviewはレビュー誘導ボタンが押されたかどうか。一度押されたら以後ださない。trueは押されたことがあるということ。
+			Ti.App.Properties.setString('review', "false");
+			//resume_countはアプリを立ち上げた回数。
+			Ti.App.Properties.setString('resume_count', 0);
+		}
+		//まだレビュー誘導ボタンが押されていないとき
+		else if(Ti.App.Properties.getString('review') == "false"){
+			recruitID = "";
+			if(parseInt(Ti.App.Properties.getString('resume_count')) < 1){
+				Ti.App.Properties.setString('resume_count', parseInt(Ti.App.Properties.getString('resume_count')) + 1 );
+			}
+			else{
+				Ti.App.Properties.setString('resume_count', 0);
+				//レビュー誘導表示
+				var reviewDialog = Titanium.UI.createAlertDialog({
+				    title: "ご利用ありがとうございます",
+				    message: "\n応援レビューを書いて、本アプリを応援して頂けないでしょうか？\n\n皆様から応援を頂けると開発が頑張れます!\n\nまた何かご要望があればレビューに書いて頂ければ修正します！",
+				    buttonNames: ['キャンセル','応援する'],
+				    cancel: 0
+				});
+				reviewDialog.addEventListener('click',function(event){
+					if(event.index == 1){
+						Ti.Platform.openURL("http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=955313441&pageNumber=0&sortOrdering=1&type=Purple+Software&mt=8");
+						Ti.App.Properties.setString('review', "true");
+					}
+				});
+				reviewDialog.show();
+			}
+		}	
 	}
 });
 
@@ -94,19 +128,19 @@ function createBannerAdView( type ){
 		case 1:
 			nend_id = '284930';
 			nend_key = '7bb422477552bc39eb05b0bd1f6fe88e71edb13b';
-			admob_id = 'ca-app-pub-8392863952863215/5215089280';
+			admob_id = 'ca-app-pub-8392863952863215/5895724484';
 			break;
 			
 		case 2:
 			nend_id = '287241';
 			nend_key = '204bfde6ecc0ba1e66a0d551b2acd148eb6e648a';
-			admob_id = 'ca-app-pub-8392863952863215/5215089280';
+			admob_id = 'ca-app-pub-8392863952863215/7372457680';
 			break;
 			
 		case 3:
 			nend_id = '287242';
 			nend_key = 'f4ce7c6f230f5c31d518882fcd1e44caf93cb73f';
-			admob_id = 'ca-app-pub-8392863952863215/5215089280';
+			admob_id = 'ca-app-pub-8392863952863215/8849190889';
 			break;
 			
 		default:
@@ -364,7 +398,7 @@ function getData(val, callback) {
 	
 	//通信が完了した場合の処理
 	xhr.onload = function(){
-		//Ti.API.info("パース前：" + this.responseText);
+		Ti.API.info("パース前：" + this.responseText);
 		//Ti.API.info("パース後：" + JSON.parse(this.responseText));
 		callback({
 			success: true,

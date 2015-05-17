@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>get-task-allow</key>
-	<true/>
+	<false/>
 	<key>application-identifier</key>
 	<string>J4A64N4LW7.jp.shiftage.monsto</string>
 	<key>keychain-access-groups</key>

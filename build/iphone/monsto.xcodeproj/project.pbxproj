@@ -30,17 +30,17 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2412F467115C296300454E5B /* TiMediaVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2412F465115C296300454E5B /* TiMediaVideoPlayer.m */; };
 		242E8E3111BA39FD0046A0D0 /* libTiCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242E8E3011BA39FD0046A0D0 /* libTiCore.a */; };
-		7DFC50129EAB465AB29A01FA /* libcom.joseandro.uniqueids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D929C557F09948D2B6C9E116 /* libcom.joseandro.uniqueids.a */; };
-		4BA4E89F8FE04B7BBCB3A8AA /* libbencoding.securely.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 105F4ABA5DCE4F61AB683865 /* libbencoding.securely.a */; };
-		46D40D4E5F5D490DB14D800B /* libti.admob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CEB501FE08481684D51FEB /* libti.admob.a */; };
-		D7708C2530CB4771BD3C87AB /* libnet.nend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C1628A2729465E9E5E9369 /* libnet.nend.a */; };
-		CB1959B28F174CE19A1C4BFA /* libcom.onecowstanding.flurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8501D3A39ACF45C7BDC89782 /* libcom.onecowstanding.flurry.a */; };
+		0805DD5AE36748DB811DE2BA /* libcom.joseandro.uniqueids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E8CFEB34C949D39E061E01 /* libcom.joseandro.uniqueids.a */; };
+		A488FF4B548E461C9CFDF286 /* libbencoding.securely.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5B43043384493190B7DC20 /* libbencoding.securely.a */; };
+		8EDD0040227043DAB7416CC1 /* libti.admob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 100A33F26C124B3CAC3E4CBF /* libti.admob.a */; };
+		D56178A7B2A34FFB97531506 /* libnet.nend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A0381853CE419CA0787CA0 /* libnet.nend.a */; };
+		3F33B40DBDD942BCB32A29F8 /* libcom.onecowstanding.flurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4216DD22AC044F48AADE49E2 /* libcom.onecowstanding.flurry.a */; };
 		242E8E3211BA39FE0046A0D0 /* libTiCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242E8E3011BA39FD0046A0D0 /* libTiCore.a */; };
-		DEBB3DFBDFBF4DFAA73D7E69 /* libcom.joseandro.uniqueids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D929C557F09948D2B6C9E116 /* libcom.joseandro.uniqueids.a */; };
-		0C290F9F15A74A3EB30A4883 /* libbencoding.securely.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 105F4ABA5DCE4F61AB683865 /* libbencoding.securely.a */; };
-		06A7E6D856F347A7933DDA6D /* libti.admob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CEB501FE08481684D51FEB /* libti.admob.a */; };
-		2E855538C4984E568F84E566 /* libnet.nend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C1628A2729465E9E5E9369 /* libnet.nend.a */; };
-		45FA715176EB416EA47C4F0F /* libcom.onecowstanding.flurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8501D3A39ACF45C7BDC89782 /* libcom.onecowstanding.flurry.a */; };
+		D2666F0352874A97A950D5B8 /* libcom.joseandro.uniqueids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E8CFEB34C949D39E061E01 /* libcom.joseandro.uniqueids.a */; };
+		F7621752B19F412093A62C56 /* libbencoding.securely.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5B43043384493190B7DC20 /* libbencoding.securely.a */; };
+		4ED1EB5F39644901A4BAEDC3 /* libti.admob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 100A33F26C124B3CAC3E4CBF /* libti.admob.a */; };
+		D452DF1B4F1144C38F3DB0BD /* libnet.nend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A0381853CE419CA0787CA0 /* libnet.nend.a */; };
+		76E08231A5A0458D81294CEE /* libcom.onecowstanding.flurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4216DD22AC044F48AADE49E2 /* libcom.onecowstanding.flurry.a */; };
 		242E967711BAD2F20046A0D0 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E967411BAD2F20046A0D0 /* AsyncSocket.m */; };
 		242E967811BAD2F20046A0D0 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E967611BAD2F20046A0D0 /* AsyncUdpSocket.m */; };
 		242E967911BAD2F20046A0D0 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E967411BAD2F20046A0D0 /* AsyncSocket.m */; };
@@ -898,11 +898,11 @@
 		DABB37B412E8CB280026A6EA /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EB0A57111E1BAE001DC2D1 /* libxml2.dylib */; };
 		DABB37B512E8CB280026A6EA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24597034118FF66300519F79 /* StoreKit.framework */; };
 		DABB37B612E8CB280026A6EA /* libTiCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242E8E3011BA39FD0046A0D0 /* libTiCore.a */; };
-		743D9B7747014FF0B83C6FD8 /* libcom.joseandro.uniqueids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D929C557F09948D2B6C9E116 /* libcom.joseandro.uniqueids.a */; };
-		43F206F767F2495BA1E5C1F3 /* libbencoding.securely.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 105F4ABA5DCE4F61AB683865 /* libbencoding.securely.a */; };
-		91C9A5C325C64BE89F617C04 /* libti.admob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CEB501FE08481684D51FEB /* libti.admob.a */; };
-		FA56638752D34C44BADE7536 /* libnet.nend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C1628A2729465E9E5E9369 /* libnet.nend.a */; };
-		3A2E07F018504D28906AEA8E /* libcom.onecowstanding.flurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8501D3A39ACF45C7BDC89782 /* libcom.onecowstanding.flurry.a */; };
+		6B8B93513CF040C7A1E43E7D /* libcom.joseandro.uniqueids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E8CFEB34C949D39E061E01 /* libcom.joseandro.uniqueids.a */; };
+		2091F327851A42F090890EC3 /* libbencoding.securely.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5B43043384493190B7DC20 /* libbencoding.securely.a */; };
+		D2DFDE597FA944E59A04839C /* libti.admob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 100A33F26C124B3CAC3E4CBF /* libti.admob.a */; };
+		73CD3EB00E1348D5BE677DEA /* libnet.nend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A0381853CE419CA0787CA0 /* libnet.nend.a */; };
+		4BD670FACA0649BAAE56926D /* libcom.onecowstanding.flurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4216DD22AC044F48AADE49E2 /* libcom.onecowstanding.flurry.a */; };
 		DABB37B712E8CB280026A6EA /* libtiverify.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D5C75811E6364F00F097E2 /* libtiverify.a */; };
 		DABDEB08128B5A8F00C85FEA /* AudioStreamerCUR.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9FF582128A1F3600457759 /* AudioStreamerCUR.m */; };
 		DABF3ECF134D210400836137 /* TiBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF3ECE134D210400836137 /* TiBuffer.m */; };
@@ -952,11 +952,11 @@
 		241EAA21118AB3BB0081A5BE /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = defines.h; path = Classes/defines.h; sourceTree = SOURCE_ROOT; };
 		241EAEC5118E2BA90081A5BE /* project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
 		242E8E3011BA39FD0046A0D0 /* libTiCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTiCore.a; path = lib/libTiCore.a; sourceTree = SOURCE_ROOT; };
-		D929C557F09948D2B6C9E116 /* libcom.joseandro.uniqueids.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcom.joseandro.uniqueids.a; path = "/Users/araki-k/Documents/Titanium_Studio_Workspace/monsto/modules/iphone/com.joseandro.uniqueids/1.1/libcom.joseandro.uniqueids.a"; sourceTree = "<absolute>"; };
-		105F4ABA5DCE4F61AB683865 /* libbencoding.securely.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbencoding.securely.a; path = "/Users/araki-k/Documents/Titanium_Studio_Workspace/monsto/modules/iphone/bencoding.securely/1.53.B/libbencoding.securely.a"; sourceTree = "<absolute>"; };
-		62CEB501FE08481684D51FEB /* libti.admob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libti.admob.a; path = "/Users/araki-k/Documents/Titanium_Studio_Workspace/monsto/modules/iphone/ti.admob/1.9.0/libti.admob.a"; sourceTree = "<absolute>"; };
-		10C1628A2729465E9E5E9369 /* libnet.nend.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnet.nend.a; path = "/Users/araki-k/Documents/Titanium_Studio_Workspace/monsto/modules/iphone/net.nend/1.2.2/libnet.nend.a"; sourceTree = "<absolute>"; };
-		8501D3A39ACF45C7BDC89782 /* libcom.onecowstanding.flurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcom.onecowstanding.flurry.a; path = "/Users/araki-k/Documents/Titanium_Studio_Workspace/monsto/modules/iphone/com.onecowstanding.flurry/1.1.5/libcom.onecowstanding.flurry.a"; sourceTree = "<absolute>"; };
+		08E8CFEB34C949D39E061E01 /* libcom.joseandro.uniqueids.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcom.joseandro.uniqueids.a; path = "/Users/araki-k/Documents/Titanium_Studio_Workspace/monsto/modules/iphone/com.joseandro.uniqueids/1.1/libcom.joseandro.uniqueids.a"; sourceTree = "<absolute>"; };
+		5F5B43043384493190B7DC20 /* libbencoding.securely.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbencoding.securely.a; path = "/Users/araki-k/Documents/Titanium_Studio_Workspace/monsto/modules/iphone/bencoding.securely/1.53.B/libbencoding.securely.a"; sourceTree = "<absolute>"; };
+		100A33F26C124B3CAC3E4CBF /* libti.admob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libti.admob.a; path = "/Users/araki-k/Documents/Titanium_Studio_Workspace/monsto/modules/iphone/ti.admob/1.9.0/libti.admob.a"; sourceTree = "<absolute>"; };
+		90A0381853CE419CA0787CA0 /* libnet.nend.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnet.nend.a; path = "/Users/araki-k/Documents/Titanium_Studio_Workspace/monsto/modules/iphone/net.nend/1.2.2/libnet.nend.a"; sourceTree = "<absolute>"; };
+		4216DD22AC044F48AADE49E2 /* libcom.onecowstanding.flurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcom.onecowstanding.flurry.a; path = "/Users/araki-k/Documents/Titanium_Studio_Workspace/monsto/modules/iphone/com.onecowstanding.flurry/1.1.5/libcom.onecowstanding.flurry.a"; sourceTree = "<absolute>"; };
 		242E967311BAD2F20046A0D0 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = Classes/AsyncSocket.h; sourceTree = SOURCE_ROOT; };
 		242E967411BAD2F20046A0D0 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = Classes/AsyncSocket.m; sourceTree = SOURCE_ROOT; };
 		242E967511BAD2F20046A0D0 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = Classes/AsyncUdpSocket.h; sourceTree = SOURCE_ROOT; };
@@ -1588,11 +1588,11 @@
 				24EB0A58111E1BAE001DC2D1 /* libxml2.dylib in Frameworks */,
 				24597035118FF66300519F79 /* StoreKit.framework in Frameworks */,
 				242E8E3111BA39FD0046A0D0 /* libTiCore.a in Frameworks */,
-				7DFC50129EAB465AB29A01FA /* libcom.joseandro.uniqueids.a in Frameworks */,
-				4BA4E89F8FE04B7BBCB3A8AA /* libbencoding.securely.a in Frameworks */,
-				46D40D4E5F5D490DB14D800B /* libti.admob.a in Frameworks */,
-				D7708C2530CB4771BD3C87AB /* libnet.nend.a in Frameworks */,
-				CB1959B28F174CE19A1C4BFA /* libcom.onecowstanding.flurry.a in Frameworks */,
+				0805DD5AE36748DB811DE2BA /* libcom.joseandro.uniqueids.a in Frameworks */,
+				A488FF4B548E461C9CFDF286 /* libbencoding.securely.a in Frameworks */,
+				8EDD0040227043DAB7416CC1 /* libti.admob.a in Frameworks */,
+				D56178A7B2A34FFB97531506 /* libnet.nend.a in Frameworks */,
+				3F33B40DBDD942BCB32A29F8 /* libcom.onecowstanding.flurry.a in Frameworks */,
 				B606EF60190B42FB00663EFC /* libAPSHTTPClient.a in Frameworks */,
 				242EA11611BD956F0046A0D0 /* ExternalAccessory.framework in Frameworks */,
 				24D5C75911E6364F00F097E2 /* libtiverify.a in Frameworks */,
@@ -1634,11 +1634,11 @@
 				24D8E4AB119B9D8A00F8CAA6 /* libxml2.dylib in Frameworks */,
 				24D8E4AC119B9D8A00F8CAA6 /* StoreKit.framework in Frameworks */,
 				242E8E3211BA39FE0046A0D0 /* libTiCore.a in Frameworks */,
-				DEBB3DFBDFBF4DFAA73D7E69 /* libcom.joseandro.uniqueids.a in Frameworks */,
-				0C290F9F15A74A3EB30A4883 /* libbencoding.securely.a in Frameworks */,
-				06A7E6D856F347A7933DDA6D /* libti.admob.a in Frameworks */,
-				2E855538C4984E568F84E566 /* libnet.nend.a in Frameworks */,
-				45FA715176EB416EA47C4F0F /* libcom.onecowstanding.flurry.a in Frameworks */,
+				D2666F0352874A97A950D5B8 /* libcom.joseandro.uniqueids.a in Frameworks */,
+				F7621752B19F412093A62C56 /* libbencoding.securely.a in Frameworks */,
+				4ED1EB5F39644901A4BAEDC3 /* libti.admob.a in Frameworks */,
+				D452DF1B4F1144C38F3DB0BD /* libnet.nend.a in Frameworks */,
+				76E08231A5A0458D81294CEE /* libcom.onecowstanding.flurry.a in Frameworks */,
 				24D5C75A11E6364F00F097E2 /* libtiverify.a in Frameworks */,
 				DADE76D613D65C6F0079FC75 /* libicucore.dylib in Frameworks */,
 			);
@@ -1679,11 +1679,11 @@
 				DABB37B412E8CB280026A6EA /* libxml2.dylib in Frameworks */,
 				DABB37B512E8CB280026A6EA /* StoreKit.framework in Frameworks */,
 				DABB37B612E8CB280026A6EA /* libTiCore.a in Frameworks */,
-				743D9B7747014FF0B83C6FD8 /* libcom.joseandro.uniqueids.a in Frameworks */,
-				43F206F767F2495BA1E5C1F3 /* libbencoding.securely.a in Frameworks */,
-				91C9A5C325C64BE89F617C04 /* libti.admob.a in Frameworks */,
-				FA56638752D34C44BADE7536 /* libnet.nend.a in Frameworks */,
-				3A2E07F018504D28906AEA8E /* libcom.onecowstanding.flurry.a in Frameworks */,
+				6B8B93513CF040C7A1E43E7D /* libcom.joseandro.uniqueids.a in Frameworks */,
+				2091F327851A42F090890EC3 /* libbencoding.securely.a in Frameworks */,
+				D2DFDE597FA944E59A04839C /* libti.admob.a in Frameworks */,
+				73CD3EB00E1348D5BE677DEA /* libnet.nend.a in Frameworks */,
+				4BD670FACA0649BAAE56926D /* libcom.onecowstanding.flurry.a in Frameworks */,
 				DABB37B712E8CB280026A6EA /* libtiverify.a in Frameworks */,
 				DADE76D713D65C7D0079FC75 /* libicucore.dylib in Frameworks */,
 			);
@@ -2740,11 +2740,11 @@
 				DAA4B2AD134E3DBD00AB6011 /* libti_ios_debugger.a */,
 				24D5C75811E6364F00F097E2 /* libtiverify.a */,
 				242E8E3011BA39FD0046A0D0 /* libTiCore.a */,
-				D929C557F09948D2B6C9E116 /* libcom.joseandro.uniqueids.a */,
-				105F4ABA5DCE4F61AB683865 /* libbencoding.securely.a */,
-				62CEB501FE08481684D51FEB /* libti.admob.a */,
-				10C1628A2729465E9E5E9369 /* libnet.nend.a */,
-				8501D3A39ACF45C7BDC89782 /* libcom.onecowstanding.flurry.a */,
+				08E8CFEB34C949D39E061E01 /* libcom.joseandro.uniqueids.a */,
+				5F5B43043384493190B7DC20 /* libbencoding.securely.a */,
+				100A33F26C124B3CAC3E4CBF /* libti.admob.a */,
+				90A0381853CE419CA0787CA0 /* libnet.nend.a */,
+				4216DD22AC044F48AADE49E2 /* libcom.onecowstanding.flurry.a */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
