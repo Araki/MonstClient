@@ -1,5 +1,18 @@
 function bbsWindow() {
 	
+	//初回アプリ起動時にモンストをインストールしているかの確認
+	if(Ti.App.Properties.getString('installed') == null){
+		Ti.App.Properties.setString('installed', 1);
+		var installedDialog = Titanium.UI.createAlertDialog({
+		    title: "モンスターストライクはインストールされていますか？",
+		    message: "\n本アプリはモンスターストライクがインストールされていないと利用できません。\n\nインストールされていない方がインストールしてからご利用ください。",
+		    buttonNames: ['OK'],
+		    cancel: 0
+		});
+		installedDialog.show();
+	}
+	
+	
 	var filtering_tag = "";
 	
 	var actInd = createActInd();

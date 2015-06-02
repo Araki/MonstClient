@@ -81,7 +81,6 @@ Ti.App.addEventListener('resume',function(){
 		//レビュー誘導ポップアップ
 		//review==nullのときは、最初にアプリを立ち上げたとき
 		if(Ti.App.Properties.getString('review') == null){
-			recruitID = "";
 			//reviewはレビュー誘導ボタンが押されたかどうか。一度押されたら以後ださない。trueは押されたことがあるということ。
 			Ti.App.Properties.setString('review', "false");
 			//resume_countはアプリを立ち上げた回数。
@@ -89,8 +88,7 @@ Ti.App.addEventListener('resume',function(){
 		}
 		//まだレビュー誘導ボタンが押されていないとき
 		else if(Ti.App.Properties.getString('review') == "false"){
-			recruitID = "";
-			if(parseInt(Ti.App.Properties.getString('resume_count')) < 1){
+			if(parseInt(Ti.App.Properties.getString('resume_count')) < 10){
 				Ti.App.Properties.setString('resume_count', parseInt(Ti.App.Properties.getString('resume_count')) + 1 );
 			}
 			else{
@@ -98,12 +96,12 @@ Ti.App.addEventListener('resume',function(){
 				//レビュー誘導表示
 				var reviewDialog = Titanium.UI.createAlertDialog({
 				    title: "ご利用ありがとうございます",
-				    message: "\n応援レビューを書いて、本アプリを応援して頂けないでしょうか？\n\n皆様から応援を頂けると開発が頑張れます!\n\nまた何かご要望があればレビューに書いて頂ければ修正します！",
-				    buttonNames: ['キャンセル','応援する'],
+				    message: "\nレビューを書いて、本アプリを応援して頂けないでしょうか？\n\n無料で提供しているため★5をつけて頂けると嬉しいです!",
+				    buttonNames: ['応援してあげる','応援なんかしない'],
 				    cancel: 0
 				});
 				reviewDialog.addEventListener('click',function(event){
-					if(event.index == 1){
+					if(event.index == 0){
 						Ti.Platform.openURL("http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=955313441&pageNumber=0&sortOrdering=1&type=Purple+Software&mt=8");
 						Ti.App.Properties.setString('review', "true");
 					}

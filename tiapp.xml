@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>jp.shiftage.monsto</id>
     <name>monsto</name>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <publisher>araki-k</publisher>
     <url>http://</url>
     <description>undefined</description>
